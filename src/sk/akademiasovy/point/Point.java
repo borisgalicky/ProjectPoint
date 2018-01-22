@@ -16,9 +16,9 @@ public class Point implements Geometry {
     }
 
     public Point(){
-     this(0,0);
-    //    x=0;
-    //    y=0;
+        this(0,0);
+        //    x=0;
+        //    y=0;
     }
 
     public int getX(){
@@ -71,8 +71,4 @@ public class Point implements Geometry {
         x=-x;
         y=-y;
     }
-
-
-
-
 }

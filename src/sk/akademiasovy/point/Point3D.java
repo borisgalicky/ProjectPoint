@@ -18,7 +18,7 @@ public class Point3D extends Point{
 
     public Point3D(int x, int y, int z){
         super(x,y); // vola kontruktor rodic a posiela mu 2 parametre
-                    // Point : public Point(int x, int y)
+        // Point : public Point(int x, int y)
         this.z=z;
     }
 
