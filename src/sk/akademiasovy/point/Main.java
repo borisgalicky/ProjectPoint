@@ -1,5 +1,7 @@
 package sk.akademiasovy.point;
 
+import sk.akademiasovy.date.MyDate;
+
 /**
  * Created by host on 17.1.2018.
  */
@@ -48,5 +50,8 @@ public class Main {
                 System.out.println("Is triangle1 isosceles? "+triangle1.isIsosceles());
                 System.out.println("Is triangle1 equilateral? "+triangle1.isEquilateral());
                 System.out.println("Is triangle1 rectangular? "+triangle1.isRectangular());
+
+                MyDate mydate= new MyDate();
+                mydate.today();
         }
 }
