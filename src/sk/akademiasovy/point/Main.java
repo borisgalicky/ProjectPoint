@@ -42,7 +42,7 @@ public class Main {
                 for (Geometry g : arr) {
                         ((Point3D) g).print();
                 }
-                Triangle triangle1=new Triangle(new Point(5,8),new Point(-8,3),new Point(4,0));
+                Triangle triangle1=new Triangle(new Point(7,7),new Point(20,7),new Point(20,2));
                 System.out.println("Perimeter of triangle1 is: "+triangle1.getTrianglePerimeter()+" cm");
                 System.out.println("Area of triangle1 is: "+triangle1.getArea()+" cm2");
                 System.out.println("Is triangle1 isosceles? "+triangle1.isIsosceles());

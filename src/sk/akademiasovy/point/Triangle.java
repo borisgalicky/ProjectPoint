@@ -35,11 +35,11 @@ public class Triangle implements InterfaceTriangle{
 
     @Override
     public boolean isRectangular(){
-        double A = c.getDistanceFromOtherPoint(b);
-        double B = a.getDistanceFromOtherPoint(c);
-        double C = a.getDistanceFromOtherPoint(b);
+        double A = getsideA();
+        double B = getsideB();
+        double C = getsideC();
         if((C*C)==(A*A)+(B*B)){
-                return true;
+            return true;
         }
         if((B*B)==(A*A)+(C*C)){
             return true;
@@ -54,16 +54,16 @@ public class Triangle implements InterfaceTriangle{
 
     @Override
     public boolean isIsosceles(){
-        double sideA = c.getDistanceFromOtherPoint(b);
-        double sideB = a.getDistanceFromOtherPoint(c);
-        double sideC = a.getDistanceFromOtherPoint(b);
-        if(sideA==sideB){
+        double A = getsideA();
+        double B = getsideB();
+        double C = getsideC();
+        if(A==B){
             return true;
         }
-        if(sideA==sideC){
+        if(A==C){
             return true;
         }
-        if(sideC==sideB){
+        if(C==B){
             return true;
         }
         else{
@@ -73,10 +73,10 @@ public class Triangle implements InterfaceTriangle{
 
     @Override
     public boolean isEquilateral() {
-        double sideA = c.getDistanceFromOtherPoint(b);
-        double sideB = a.getDistanceFromOtherPoint(c);
-        double sideC = a.getDistanceFromOtherPoint(b);
-        if((sideA==sideB)&&(sideB==sideC)){
+        double A = getsideA();
+        double B = getsideB();
+        double C = getsideC();
+        if((A==B)&&(B==C)){
             return true;
         }
         else{
