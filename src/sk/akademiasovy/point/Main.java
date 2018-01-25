@@ -51,7 +51,9 @@ public class Main {
                 System.out.println("Is triangle1 equilateral? "+triangle1.isEquilateral());
                 System.out.println("Is triangle1 rectangular? "+triangle1.isRectangular());
 
-                MyDate mydate= new MyDate();
+                MyDate mydate=new MyDate();
                 mydate.today();
+                MyDate mydate2=new MyDate();
+                mydate2.today2();
         }
 }
